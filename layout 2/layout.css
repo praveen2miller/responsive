@@ -1,0 +1,200 @@
+*,body
+{
+margin:0px;
+
+}
+@font-face {
+  font-family: 'Ephesis', cursive;
+  src: url('./Ephesis-Regular.ttf')format(truetype);
+}
+
+.sprite2 {
+  display: inline-block;
+	background: url('imgs/spriteimage.svg')  -21px -21px;
+	width: 21px;
+	height: 21px;
+}
+.sprite1 {
+  display: inline-block;
+	background: url('imgs/spriteimage.svg') no-repeat -401px -65px;
+	width: 14px;
+	height: 16px;
+}
+.sprite3{
+  display: inline-block;
+	background: url('imgs/spriteimage.svg') no-repeat -68px -21px;
+	width: 21px;
+	height: 17px;
+}
+.sprite4{
+  display: inline-block;
+	background: url('imgs/spriteimage.svg') no-repeat -553px -21px;
+	width: 20px;
+	height: 20px;
+}
+
+
+.main
+{
+  font-family: 'Ephesis', cursive;
+  font-size: 25px;
+  text-align: center;
+}
+
+div
+{
+width:100%;
+}
+
+.head>div
+{
+
+height:120px;
+background-color:#fca234;
+
+}
+.menu
+{
+
+height:350px;
+margin-bottom:10px;
+background-color:#dcea04;
+}
+
+
+.content>div
+{
+
+height:240px;
+background-color:#4c86cc;
+}
+.foot>div
+{
+height:180px;
+background-color:#dcdedc;
+}
+
+.head,.content,.foot
+{
+display:flex;
+gap:1%;
+
+margin-bottom:10px;
+}
+
+.head>div:hover,.menu:hover
+{
+height:400px;
+background-color:black;
+transition: height 2s;
+color: white;
+}
+.content1:hover
+{
+  background-image: url('imgs/1.jpg');
+  background-size: 100% 100%;
+ 
+
+}
+.content2:hover
+{
+  background-image: url('imgs/2.jpg');
+  background-size: 100% 100%;
+}
+.content3:hover
+{
+  background-image: url('imgs/3.jpg');
+  background-size: 100% 100%;
+}
+
+
+
+.menu:hover
+{
+  transition: height 2s;
+
+}
+.foot>div:hover
+{
+
+  transform: rotate(20deg);
+  color:black;
+
+
+}
+
+
+  
+@media only screen and (max-width: 768px) and (min-width: 321px) 
+{
+.head,.content
+{
+display:initial;
+
+}
+.head>div,.content>div,.foot>div
+{
+
+margin-bottom:10px;
+}
+.foot
+{
+flex-wrap:wrap;
+
+}
+.foot>div
+{
+width:49.5%;
+
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 320px)
+{
+.head,.content,.foot
+{
+display:initial;
+gap:10px;
+margin:0px;
+
+}
+
+.head>div,.content>div,.foot>div,.menu
+{
+margin:10px;
+margin-left:0px;
+
+
+}
+
+
+
+.head>div
+{
+height:70px;
+}
+.menu
+{
+
+height:100px;
+
+}
+.content>div
+{
+height:160px;
+}
+.foot>div
+{
+height:50px;
+
+}
+
+
+
+}
+
